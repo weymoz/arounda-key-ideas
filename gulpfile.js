@@ -8,6 +8,7 @@ const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const del = require('del');
 const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
 
 const SCSS_PATH = 'src/scss';
 const HTML_PATH = 'src/index.html';
@@ -19,9 +20,11 @@ function css() {
     `${SCSS_PATH}/**/*.scss`,
   ])
     .pipe(plumber())
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(concat('style.css'))
+    .pipe(sourcemaps.write())
     .pipe(dest(DIST_PATH))
     .pipe(browsersync.stream());
 }
