@@ -388,6 +388,8 @@ body {
     display: flex;
     -webkit-box-pack: center;
             justify-content: center; }
+  .key-ideas__title {
+    padding-left: 0; }
   .key-ideas__item {
     width: 33.3%;
     -webkit-box-flex: 1;
