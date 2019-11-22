@@ -382,7 +382,45 @@ body {
   .container {
     width: 1296px;
     padding-left: 108px;
-    padding-right: 108px; } }
+    padding-right: 108px; }
+  .key-ideas__items {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center; }
+  .key-ideas__item {
+    width: 33.3%;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    min-height: 490px;
+    box-sizing: border-box;
+    padding-top: 64px;
+    padding-bottom: 37px;
+    padding-left: 44px;
+    padding-right: 44px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    .key-ideas__item:hover {
+      color: #fff;
+      background-color: #4562c9;
+      -webkit-transition: background-color 200ms ease-in;
+      transition: background-color 200ms ease-in; }
+    .key-ideas__item:hover .key-ideas__item-number {
+      color: #fff; }
+  .key-ideas__item-number {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    margin-top: auto; }
+  .key-ideas__item-title {
+    font-size: 28px;
+    line-height: 44px;
+    margin-bottom: 34px; }
+  .key-ideas__item-text {
+    letter-spacing: -0.4px;
+    margin-bottom: 48px; } }
 
 @media (min-width: 1680px) {
   .container {
