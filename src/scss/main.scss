@@ -1,4 +1,3 @@
-@import './component';
-body {
-  color: $text-color;
-}
+@import './vars';
+@import './global';
+@import './key-ideas';
