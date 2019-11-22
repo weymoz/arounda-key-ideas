@@ -27,7 +27,6 @@ body {
     padding-top: 40px;
     padding-bottom: 48px;
   }
-
   &__item-number {
     font-size: 21px;
     line-height: 32px;
@@ -37,6 +36,9 @@ body {
   &__item-title {
     margin-top: 24px;
     margin-bottom: 18px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
     font-size: 21px;
     line-height: 39px;
   }
@@ -86,7 +88,6 @@ body {
   }
 
   .key-ideas {
-    
     &__items {
       display: flex;
       justify-content: center;
@@ -150,5 +151,21 @@ body {
 
     padding-left: 245px;
     padding-right: 245px;
+  }
+
+  .key-ideas {
+    &__title {
+    }
+
+    &__item {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+
+    &__item-number {
+    }
+
+    &__item-title {
+    }
   }
 }

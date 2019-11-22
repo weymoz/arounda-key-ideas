@@ -356,6 +356,8 @@ body {
 .key-ideas__item-title {
   margin-top: 24px;
   margin-bottom: 18px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
   font-size: 21px;
   line-height: 39px; }
 
@@ -428,4 +430,7 @@ body {
   .container {
     width: 1680px;
     padding-left: 245px;
-    padding-right: 245px; } }
+    padding-right: 245px; }
+  .key-ideas__item {
+    padding-left: 54px;
+    padding-right: 54px; } }
